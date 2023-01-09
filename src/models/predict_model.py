@@ -1,7 +1,3 @@
-import argparse
-import os
-import sys
-
 import click
 # import matplotlib.pyplot as plt
 import torch
@@ -16,6 +12,7 @@ from src.models.model import MyAwesomeModel
 @click.group()
 def cli():
     pass
+
 
 wandb.init()
 
@@ -52,8 +49,6 @@ class dataloader(Dataset):
         label = self.labels[idx]
 
         return image, label
-
-
 
 @click.command()
 @click.argument("model_checkpoint")
@@ -96,8 +91,6 @@ def evaluate(model_checkpoint, test_path):
     print(f"Test loss: {val_loss}  Test accuracy: {accuracy.item() * 100}%")
     wandb.log({'Test loss': val_loss, 'Test accuracy': accuracy.item() * 100})
 
-
-
     print("Examples:")
     print("Labels:     ", labels[:10])
     print("Predictions:", top_class[:10].flatten())
@@ -105,14 +98,12 @@ def evaluate(model_checkpoint, test_path):
     # I use the unique wandb run id to organize my artifacts
     test_data_at = wandb.Artifact("test_samples_" + str(wandb.run.id), type="predictions")
 
-    columns = ["id","image", "label", "prediction"]
+    columns = ["id", "image", "label", "prediction"]
     my_table = wandb.Table(columns=columns)
 
     for i in range(8):
-        img = wandb.Image(images[i,:,:], caption="Example")
+        img = wandb.Image(images[i, :, :], caption="Example")
         my_table.add_data(i, img, labels[i], top_class[i].flatten().item())
-
-
 
     # Log your Table to wandb
     test_data_at.add(my_table, "predictions")
@@ -122,8 +113,3 @@ cli.add_command(evaluate)
 
 if __name__ == "__main__":
     cli()
-
-
-
-
-

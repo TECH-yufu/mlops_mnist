@@ -19,18 +19,17 @@ def main(input_filepath, output_filepath):
     logger = logging.getLogger(__name__)
     logger.info('making final data set from raw data')
 
-     # exchange with the corrupted mnist dataset
+    # exchange with the corrupted mnist dataset
     d1 = np.load(os.path.join(input_filepath, 'train_0.npz'))
 
     train = {'images': torch.tensor(d1['images']), 'labels': torch.tensor(d1['labels'])}
 
-    for i in range(1,5):
+    for i in range(1, 5):
         d2 = np.load(os.path.join(input_filepath, 'train_{}.npz'.format(i)))
         train['images'] = torch.cat((train['images'], torch.tensor(d2['images'])))
         train['labels'] = torch.cat((train['labels'], torch.tensor(d2['labels'])))
 
     test_ = np.load(os.path.join(input_filepath, 'test.npz'))
-
 
     test = {'images': torch.tensor(test_['images']), 'labels': torch.tensor(test_['labels'])}
 

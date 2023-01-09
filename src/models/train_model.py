@@ -1,7 +1,3 @@
-import argparse
-import os
-import sys
-
 import click
 # import matplotlib.pyplot as plt
 import torch
@@ -16,9 +12,10 @@ import wandb
 wandb.init()
 
 @click.group()
+
+
 def cli():
     pass
-
 
 class dataloader(Dataset):
     def __init__(self, dataset):
@@ -134,8 +131,3 @@ cli.add_command(train)
 
 if __name__ == "__main__":
     cli()
-
-
-
-
-
