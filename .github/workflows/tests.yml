@@ -1,4 +1,4 @@
-name: "Run tests with caching"
+name: "Run tests without caching"
 
 on:
   push:
