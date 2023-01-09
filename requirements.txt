@@ -16,4 +16,4 @@ torchaudio
 numpy
 matplotlib
 dvc
-"dvc[gdrive]"
+dvc[gdrive]
