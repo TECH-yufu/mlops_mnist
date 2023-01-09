@@ -1,0 +1,44 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.10.8",
+    "heartbeatAt": "2023-01-05T13:27:10.056222",
+    "startedAt": "2023-01-05T13:27:08.802862",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "C:\\Users\\Yucheng\\OneDrive - Danmarks Tekniske Universitet\\DTU\\Menneskeorienteret kunstig intelligens\\7. semester\\Machine learning operations\\Day 2\\day2\\src\\models\\train_model.py",
+    "codePath": "train_model.py",
+    "host": "LAPTOP-06G7OQV2",
+    "username": "Yucheng",
+    "executable": "C:\\Users\\Yucheng\\anaconda3\\envs\\MLOps\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2496.0,
+        "min": 0.0,
+        "max": 2496.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2496.0,
+            "min": 0.0,
+            "max": 2496.0
+        }
+    ],
+    "disk": {
+        "total": 475.69237899780273,
+        "used": 459.1442451477051
+    },
+    "gpu": "NVIDIA GeForce GTX 1660 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1660 Ti",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 15.870895385742188
+    }
+}

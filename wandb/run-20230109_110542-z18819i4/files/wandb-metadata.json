@@ -1,0 +1,45 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.10.8",
+    "heartbeatAt": "2023-01-09T10:05:45.759194",
+    "startedAt": "2023-01-09T10:05:42.739007",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "tests/"
+    ],
+    "state": "running",
+    "program": "-m __main__",
+    "host": "LAPTOP-06G7OQV2",
+    "username": "Yucheng",
+    "executable": "C:\\Users\\Yucheng\\anaconda3\\envs\\MLOps\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2496.0,
+        "min": 0.0,
+        "max": 2496.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2496.0,
+            "min": 0.0,
+            "max": 2496.0
+        }
+    ],
+    "disk": {
+        "total": 475.69237899780273,
+        "used": 449.40728759765625
+    },
+    "gpu": "NVIDIA GeForce GTX 1660 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1660 Ti",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 15.870895385742188
+    }
+}
