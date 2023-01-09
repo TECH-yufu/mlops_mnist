@@ -29,7 +29,7 @@ def test_data_labels():
 
 # train = torch.load(os.path.join(_PATH_DATA, 'processed/train.pt'))
 # test = torch.load(os.path.join(_PATH_DATA, 'processed/test.pt'))
-# 
+#
 # # parameterized decorator
 # @pytest.mark.parametrize("condition,expected", [([torch.all(torch.le(i, 3)).item() for i in train['images']], True),
 #                                                 ([torch.all(torch.ge(i, -1)).item() for i in train['images']], True),

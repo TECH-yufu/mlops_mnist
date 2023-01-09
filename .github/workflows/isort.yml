@@ -39,4 +39,4 @@ jobs:
     - name: Use isort
       run: |
         pip install isort
-        isort src/
+        isort src

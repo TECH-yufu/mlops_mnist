@@ -3,7 +3,7 @@ import os
 import sys
 
 import click
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import torch
 import torch.nn as nn
 import wandb
@@ -11,7 +11,6 @@ from torch.utils.data import DataLoader, Dataset
 
 # from data import mnist
 from src.models.model import MyAwesomeModel
-from PIL import Image
 
 
 @click.group()

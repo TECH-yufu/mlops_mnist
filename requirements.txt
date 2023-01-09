@@ -15,4 +15,6 @@ torchvision
 torchaudio
 numpy
 matplotlib
-dvc[gdrive]==2.7.4
+dvc[gdrive]
+matplotlib
+wandb

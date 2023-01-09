@@ -39,4 +39,4 @@ jobs:
     - name: Use mypy
       run: |
         pip install mypy
-        mypy src/
+        mypy src
