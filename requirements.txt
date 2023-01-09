@@ -15,5 +15,4 @@ torchvision
 torchaudio
 numpy
 matplotlib
-dvc==2.38.1
 dvc[gdrive]
