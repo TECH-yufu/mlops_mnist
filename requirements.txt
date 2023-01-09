@@ -15,3 +15,5 @@ torchvision
 torchaudio
 numpy
 matplotlib
+dvc
+"dvc[gdrive]"
